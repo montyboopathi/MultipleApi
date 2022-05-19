@@ -14,17 +14,17 @@ public class ApiService {
 	@Autowired
 	public RestTemplate resttemplate;
 	
-	public ApiModel2 ApiResponse() {
+	public ApiModel2 apiAnimal() {
 		return resttemplate.getForObject(
 				"https://zoo-animal-api.herokuapp.com/animals/rand"
 , ApiModel2.class);
 	}
-	public ApiModel ApiSecond() {
+	public ApiModel apiXcolors() {
 		return resttemplate.getForObject(
 				"https://x-colors.herokuapp.com/api/random"
 , ApiModel.class);
 	}
-	public ApiModel3 ApiThird() {
+	public ApiModel3 apiAnimals() {
 		return resttemplate.getForObject(
 				"https://zoo-animal-api.herokuapp.com/animals/rand"
 , ApiModel3.class);

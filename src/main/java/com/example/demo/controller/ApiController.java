@@ -20,17 +20,17 @@ public class ApiController {
 	
 	@PostMapping("/firstresponse")
 	public ResponseEntity<ApiModel2> fetchData(){
-		return new ResponseEntity<>(apiservice.ApiResponse(),HttpStatus.OK);
+		return new ResponseEntity<>(apiservice.apiAnimal(),HttpStatus.OK);
 	}
 	
 	@PostMapping("/secondresponse")
 	public ResponseEntity<ApiModel> secondData(){
-		return new ResponseEntity<>(apiservice.ApiSecond(),HttpStatus.OK);
+		return new ResponseEntity<>(apiservice.apiXcolors(),HttpStatus.OK);
 	}
 
 	@PostMapping("/thirdresponse")
 	public ResponseEntity<ApiModel3> thirdData(){
-		return new ResponseEntity<>(apiservice.ApiThird(),HttpStatus.OK);
+		return new ResponseEntity<>(apiservice.apiAnimals(),HttpStatus.OK);
 	}
 
 
